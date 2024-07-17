@@ -71,7 +71,7 @@ main button {
   font-family: "HelveticaNeueLTStd-BdEx";
   width: 200px;
 }
-.button1 {
+.remove {
   background: rgb(233, 135, 225);
   background: linear-gradient(
     180deg,
@@ -79,7 +79,7 @@ main button {
     rgba(115, 39, 140, 1) 100%
   );
 }
-.button2 {
+.passButt {
   background: rgb(153, 93, 218);
   background: linear-gradient(
     180deg,
@@ -87,7 +87,7 @@ main button {
     rgba(64, 40, 97, 1) 100%
   );
 }
-.button3 {
+.add {
   background: rgb(233, 135, 225);
   background: linear-gradient(
     180deg,

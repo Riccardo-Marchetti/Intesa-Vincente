@@ -15479,10 +15479,10 @@ let parole = [
   "zzz",
 ];
 
-const point = document.getElementsByClassName("a")[0];
-const addButt = document.getElementsByClassName("button3")[0];
-const subButt = document.getElementsByClassName("button1")[0];
-const passButt = document.getElementsByClassName("button2")[0];
+const point = document.getElementsByClassName("counter")[0];
+const addButt = document.getElementsByClassName("add")[0];
+const subButt = document.getElementsByClassName("remove")[0];
+const passButt = document.getElementsByClassName("passButt")[0];
 console.log(passButt);
 
 function subPass() {
@@ -15521,12 +15521,12 @@ let isTimerRunning = false;
 function startTimer() {
   timer = setInterval(function () {
     count--;
-    document.getElementById("temp").innerText = count;
+    document.getElementById("tempo").innerText = count;
 
     if (count <= 0) {
       clearInterval(timer);
       isTimerRunning = false;
-      document.getElementById("temp").innerText = ":00";
+      document.getElementById("tempo").innerText = ":00";
     }
   }, 1000);
 }
@@ -15559,8 +15559,7 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("keydown", function (e) {
   if (e.which == 32) {
     if (!isTimerRunning) {
-      // count = 60;
-      document.getElementById("temp").innerText = count;
+      document.getElementById("tempo").innerText = count;
       startTimer();
       isTimerRunning = true;
 
